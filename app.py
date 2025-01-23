@@ -4,7 +4,7 @@ import openai
 
 app = Flask(__name__)
 
-openai.api_key = "sk-JkHRWr6RScAvQkcgIDXBzh8TYdUh8_cOP3aTVU4S60T3BlbkFJH27Z16VnHxuXnsyOsLDvXo1EXybVRgD9OCL39slAEA"
+openai.api_key = ""
 
 def process_with_chatgpt(query, top_faqs):
     """

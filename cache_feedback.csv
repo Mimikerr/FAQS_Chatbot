@@ -1,0 +1,300 @@
+Pergunta,Resposta,Feedback_Positivo,Feedback_Total
+remoto interno nao funciona,"Desculpe, houve um erro ao processar sua pergunta.",0,1
+remoto externo,"Olá! Entendo que você está buscando informações sobre o uso de um sistema remoto externo. 
+
+Se a sua dúvida está relacionada à configuração de TEF remoto, é importante garantir que o servidor e o caixa estejam conectados corretamente. Para isso, você pode seguir os passos abaixo:
+
+1. **Verifique a conexão**: O servidor deve ter acesso à internet e estar configurado para permitir conexões externas.
+2. **Instale o Hamachi**: Tanto no servidor quanto no caixa, instale o Hamachi para criar uma rede virtual entre os dois.
+3. **Configuração da DLL**: No servidor, coloque a DLL ""msxml.dll"" na pasta C:\Windows\System32 e registre-a usando o comando `regsvr32 ""C:\Windows\System32\msxml.dll""` no prompt de comando.
+4. **Crie e compartilhe a pasta TEF**: No servidor, crie a pasta C:\Softcom\TEF e a compartilhe, garantindo que o caixa tenha acesso.
+5. **Configurações no Softshop**: No Softshop, em ""Integração de Lojas"", a pasta destino deve apontar para a pasta TEF no caixa. Além disso, habilite o TEF remoto nas configurações do Softshop.
+
+Se você estiver enfrentando dificuldades específicas ou precisar de assistência adicional, não hesite em nos informar! Estamos aqui para ajudar.",0,1
+remoto interno,"Resposta: Parece que você está se referindo a uma questão de conexão remota interna. No entanto, para fornecer uma solução adequada, preciso de mais detalhes sobre o problema que você está enfrentando. Você poderia por favor fornecer mais informações ou detalhar o problema? Isso ajudará a fornecer uma resposta mais precisa e eficaz.",0,0
+meu caixa está offiline,"Resposta: Sinto muito por você estar enfrentando esse problema. Primeiramente, verifique se a sua conexão com a internet está estável. Se a conexão estiver boa, tente reiniciar o sistema do caixa. Se o problema persistir, por favor, entre em contato conosco novamente para que possamos ajudá-lo de forma mais detalhada.",0,1
+meu pdv está parado,"Resposta: Entendo que você está enfrentando problemas com seu PDV. Para poder ajudá-lo da melhor forma possível, preciso de mais detalhes sobre o problema. Ele apresenta alguma mensagem de erro? Se sim, qual é a mensagem? O problema ocorreu após alguma atualização ou mudança recente no sistema? Quanto mais informações você puder fornecer, mais fácil será para eu ajudá-lo a resolver o problema.",0,0
+pdv parado,"A situação de PDV parado pode ser causada por vários fatores, incluindo erros no banco de dados, problemas na impressora ou falta de internet no caixa ou servidor. Aqui estão algumas soluções que podem ajudar a resolver o problema:
+
+1. Reinstalar o PDV: Você pode fazer isso acessando o HelpTools, indo em downloads, procurando o PDV - SoftShop Caixa e clicando na nuvem para baixa-lo. Enquanto isso, abra o painel de controle e clique em desinstalar um programa. Procure o PDV e desinstale. Após desinstalar, abra o arquivo do PDV que foi baixado, e instale-o seguindo os passos do assistente de instalação.
+
+2. Atualizar o .NET para versão mais atual: Acesse o painel de controle e clique em desinstalar um programa para fazer isso.
+
+3. Caso o erro seja Caixa off-line, ou algum erro de comunicação com o banco: Você deve reiniciar o computador do caixa e do servidor.
+
+4. Caso o erro seja na impressão do cupom: Você pode tentar instalar uma impressora não fiscal Epson TM-T20 na porta USB e configurá-la no PDV, ou instalar uma impressora MP 4200 não fiscal USB.
+
+Se nenhuma dessas soluções resolver o problema, é recomendável entrar em contato com o suporte técnico para obter ajuda adicional.",0,0
+estou com um pdv parado,causa: problemas na impressora solução: tenta enviar uma pagina de teste de impressao,0,1
+troca no pdv,"Para realizar uma troca de produtos através do cupom ou do número do pedido no PDV, siga os seguintes passos:
+
+1. Pressione F11 (funções).
+2. Selecione a opção ""Trocas"".
+3. Em ""Tipo de Pesquisa"", selecione ""NFCe"" se estiver com o cupom eletrônico em mãos ou ""Pedido"" se estiver com o número do pedido no sistema. Por exemplo, vamos buscar pela NFCe nº 243. Serão exibidas as mercadorias dessa venda, dê um clique duplo na coluna ""Devolver"" e informe a quantidade que será devolvida.
+4. Após isso, pressione ""F2"" para informar qual mercadoria será levada em troca. Se o cliente não for levar nenhuma mercadoria em troca, as opções ""F5 - Devolver Valor Pago"" ou ""F7 - Salvar Crédito"" podem ser usadas.
+5. Selecione o item que o cliente vai levar e pressione F1. Na coluna ""quantidade"", informe a quantidade que será levada e clique em ""Confirmar"".
+6. Observe a diferença a ser paga pelo cliente no campo ""Saldo"" e clique em ""Pagar Diferença"".
+7. Informe o vendedor que está realizando a troca.
+8. Finalize a venda informando em qual forma de pagamento essa diferença será paga.
+
+Para alterar o prazo ou a mensagem de troca, acesse SoftShop > Empresas > Configurações > Troca. Se quiser imprimir um comprovante para a troca, acesse Configurações do PDV > Tela de Vendas e marque ""Habilitar vias de comprovante de impressão"". Ao chegar",1,1
+estou com um caixa off-line,"A partir das informações fornecidas, parece que você pode estar experimentando problemas de conexão com a rede ou VPN. Siga estas etapas para corrigir o problema:
+
+1. Desconecte a VPN e feche o PDV.
+2. Clique no botão Iniciar do Windows e digite: ""Exibir conexões de rede"".
+3. Pressione a tecla ""Alt"", clique em ""Avançado"" e, em seguida, em ""Configurações avançadas"".
+4. No grupo ""Conexões"", escolha a rede que você usa para conexão com a internet (normalmente ""Conexão local"") e deixe na primeira posição (clique nas setas verdes para definir a prioridade).
+5. Deixe a conexão da VPN do TEF Auttar na última posição.
+6. Reconecte a VPN e abra o PDV (teste)
+7. Vá em funções menu F11 do PDV e mande verificar a conexão.
+
+Se o problema persistir, por favor, forneça mais detalhes para que eu possa ajudá-lo melhor.",0,1
+erro de null 94,"A causa do erro 94 (uso de null inválido) geralmente está relacionada à seleção de uma linha que não contém mercadoria ou se no cadastro de mercadorias o campo situação está em branco. Também pode ser que o desconto ou a mensagem da tela de vendas estejam em branco. 
+
+Para solucionar o problema, você terá que fechar o sistema e verificar se não selecionou uma linha sem mercadoria. Se isso estiver correto, o provável problema está no cadastro da mercadoria que pode estar faltando a situação. Se mesmo assim o erro persistir, verifique se o desconto ou a mensagem na tela de vendas não estão em branco.",1,1
+como realizar trocas no pdv?,"Para realizar uma troca de produtos no PDV através do cupom ou do número do pedido, siga as seguintes etapas:
+
+1. Pressione F11 (funções).
+2. Selecione a opção ""Trocas"".
+3. Selecione ""NFCe"" em ""Tipo de pesquisa"" se estiver com o cupom eletrônico em mãos ou ""Pedido"" se estiver com o número do pedido no sistema.
+4. Após exibir as mercadorias da venda, clique duas vezes na coluna ""Devolver"" e informe a quantidade a ser devolvida.
+5. Pressione ""F2"" para informar qual mercadoria será levada em troca. Se o cliente não for levar nenhuma mercadoria em troca, use as opções ""F5 - Devolver valor pago"" ou ""F7 - Salvar crédito"".
+6. Selecione o item que o cliente vai levar e pressione F1.
+7. Na coluna ""Quantidade"", informe a quantidade que será levada e clique em ""Confirmar"".
+8. Observe a diferença a ser paga pelo cliente no campo ""Saldo"" e clique em ""Pagar diferença"".
+9. Informe o vendedor que está realizando a troca.
+10. Finalize a venda informando em qual forma de pagamento essa diferença será paga.
+
+Para imprimir o comprovante de troca, vá para as configurações do PDV > Tela de vendas e marque ""Habilitar vias de comprovante de impressão"". Clique em Alt + P na tela de pagamento do PDV para imprimir o comprovante de troca. Para cancelar a impressão do comprovante, pressione Alt + C. O comprovante de troca será impresso ao finalizar a venda. 
+
+Para alter",0,0
+no que você pode me ajudar?,"Como assistente técnico, estou aqui para fornecer suporte e esclarecer suas dúvidas com base nas informações que tenho em nossa base de dados FAQ. Posso ajudar com questões sobre como abrir e fechar o caixa, procedimento de troca de produtos, orientações sobre o uso de CFOP e informações sobre DIMOB. Por favor, forneça mais detalhes sobre a sua dúvida ou problema, para que eu possa fornecer a melhor resposta ou solução possível.",0,0
+estou com um erro 337 no meu caixa,"Desculpe, mas a informação fornecida na base de dados FAQ não contém uma solução para o erro 337 no caixa. Peço que verifique o manual do usuário ou entre em contato com o suporte técnico para obter assistência.",0,0
+estou com um erro de argumento invalido,"Se você está recebendo um erro de ""Argumento Inválido"", isso pode estar relacionado ao erro nº 3001 na base de dados FAQ. A solução sugerida para esse problema é compactar e reparar o front-end e a base de dados. Se você continuar tendo problemas após tentar essas correções, sugiro procurar ajuda adicional de um profissional de TI ou de suporte técnico.",1,1
+como posso enviar xml automaticamente de xml?,"Para enviar o XML da nota fiscal eletrônica automaticamente por email após a emissão, você precisa seguir alguns passos:
+
+1. Certifique-se de que o cadastro do cliente da nota fiscal tenha o campo email preenchido. Você pode verificar isso na tela de nota fiscal no campo e-mail.
+
+2. O emissor precisa estar configurado corretamente. Você pode verificar isso no menu ao abrir a tela, e clicar no botão 'testar'. Se tudo estiver configurado corretamente, uma mensagem aparecerá indicando que todas as configurações estão corretas e na emissão da nota será enviado email para seu cliente.
+
+3. Na imagem do sistema, é possível ver que seu cliente recebeu de forma automática o XML e PDF da nota. Um ícone de uma cartinha amarela indica que o email foi enviado, se ela estiver cinza, revise as configurações do seu email e do e-mail do cliente, pois não houve envio.
+
+4. Caso queira reenviar uma outra nota, você pode seguir as instruções do FAQ 5882.
+
+Lembre-se: é importante que tanto seu sistema de emissão de notas quanto os dados dos clientes estejam atualmente atualizados para que o envio automático funcione corretamente.",1,1
+impressão saindo em outra impressora,"A causa do problema parece ser que você possui mais de uma impressora e está acessando com o mesmo usuário em diferentes estações. Para resolver isso, você pode seguir as seguintes etapas: 
+
+1. Crie um usuário para cada setor que possui uma impressora.
+2. Adicione a impressora correta via compartilhamento.
+3. Defina a impressora correta como padrão.
+
+Espero que isso resolva o problema de impressões saindo na impressora errada.",1,1
+como emitir uma mdfe?,"Para emitir um MDF-e (Manifesto Eletrônico de Documentos Fiscais), você deve seguir os seguintes passos:
+
+1. Acesse o software de emissão do MDF-e (pode variar dependendo do sistema que você usa).
+2. Preencha todos os campos necessários. Isso geralmente inclui informações sobre o veículo, a carga, a documentação e a inclusão de mercadorias para a mesma UF de descarregamento.
+3. Após preencher todas as informações necessárias, submeta o MDF-e à autorização da SEFAZ (Secretaria da Fazenda). 
+
+É importante lembrar que, se o MDF-e for emitido com erro, ele pode ser alterado se ainda não tiver sido autorizado ou se tiver sido autorizado há menos de 24h e o transporte ainda não tiver sido iniciado. Caso contrário, será necessário encerrar o MDF-e e emitir um novo. 
+
+Em caso de indisponibilidade da emissão no modo normal, é possível emitir o MDF-e em contingência. Para isso, na tela do MDF-e, mude o ""tipo de emissão"" para ""contingência"". Depois disso, pesquise o MDF-e, clique em enviar e imprima normalmente. 
+
+Para mais detalhes, consulte o FAQ MDF-e para emissão e encerramento e o FAQ MDF-e para cancelamento.",0,1
+como cancelar uma mdfe,"Para cancelar uma MDF-e, você pode seguir as instruções detalhadas em nossos vídeos disponíveis. Temos um fluxo completo que cobre emissão, encerramento ou cancelamento de MDF-e. O link do vídeo sobre cancelamento de MDF-e é: https://www.youtube.com/embed/a42rs18nb_s. Por favor, siga as instruções dadas no vídeo para realizar o cancelamento de forma adequada.",0,1
+como encerrar uma mdfe?,"Encerrar o MDFe é uma prática necessária para informar ao fisco que o fato gerador do documento foi finalizado, ou seja, as mercadorias e o veículo chegaram ao final da rota. Caso haja a necessidade de mudanças nas informações do MDFe que está acobertando uma carga, é preciso realizar o encerramento do mesmo para que uma nova emissão seja feita para o restante do percurso. 
+
+Para realizar o encerramento, o documento não pode ter sido cancelado anteriormente. Se houver documentos pendentes que referenciam um veículo, é preciso registrar seu cancelamento ou encerramento para que seja possível emitir um novo MDFe. Portanto, encerrar um MDFe é obrigatório e consolida o processo completo de um MDFe.",0,0
+rejeicao: modbcst deve ser verificado,"A rejeição ""modbcst deve ser verificado"" ocorre quando a modalidade de base de cálculo ICMS está com valor incorreto. Para resolver isso, você deve verificar e selecionar algum tipo da lista em detalhes fiscais no cadastro das mercadorias e tentar reprocessar a nota em questão.",0,0
+estou com o caixa parado,"Se você está com problemas no caixa, é importante identificar a causa exata do problema. Se o sistema está apenas carregando ao abrir o caixa, pode ser que a tabela de cadastro de vendedores esteja sem dados. Nesse caso, você pode tentar reconfigurar o cache para carregar o cadastro de vendedores ou importar a tabela para a base.
+
+Se o problema é que você não consegue fazer o fechamento do caixa, pode ser que exista algum caixa anterior em aberto. Nesse caso, você pode verificar a tabela caixa_funcoesregistros, e na coluna data fechamento, e usuariofechamento, perguntar para o cliente qual a data e usuário de fechamento correto.
+
+Se você notar uma divergência em seu caixa, você pode verificar o relatório de caixa de inconsistência (relatórios gerais -> caixa -> tipo: inconsistências) para ver se existe alguma inconsistência. Caso exista, basta corrigir os valores de acordo com o pedido. Se não houver divergência, verifique qual o período que apresenta a divergência e encaminhe a ocorrência para o setor de nível 2 para ser analisado.
+
+Espero que essas informações ajudem a resolver o problema do seu caixa.",0,1
+pdv offiline,"Com base nas informações fornecidas, se o seu PDV está offline, pode ser devido a erros no banco de dados, erros na impressora, ou o caixa ou servidor estar sem internet. Aqui estão algumas soluções possíveis:
+
+1. Reinstale o caixa. Para isso, acesse o HelpTools, vá em downloads, procure o PDV - Softshop Caixa e clique na nuvem para baixá-lo. Enquanto estiver baixando o PDV, abra o Painel de Controle e clique em desinstalar um programa. Procure o PDV e desinstale. Após desinstalar, abra o arquivo do PDV que foi baixado e instale.
+
+2. Atualize .NET para a versão mais atual. Acesse o Painel de Controle > Desinstalar um programa.
+
+3. Se o erro for caixa off-line, ou algum erro de comunicação com o banco, deve ser reiniciado o computador do caixa e do servidor.
+
+4. Se o erro for na impressão do cupom, instale a impressora não fiscal Epson TM-T20 na porta USB e configure no PDV.
+
+5. Verifique também a conexão com a internet. Se o problema persistir, verifique no Monitor Sefaz se a Sefaz do estado do cliente está online ou oscilando.
+
+6. Verifique o certificado digital, se está válido e/ou reinstale e selecione, seguindo a FAQ 302.
+
+7. Verifique a hora e data do computador e o fuso horário.
+
+8. Verifique no caixa se o tempo de envio está zerado, pois isso também pode interferir.
+
+Lembre-se que, em alguns casos, pode ser necessário reiniciar o computador após a instalação de algumas atualizações ou corre",1,1
+remoto interno não abre,"O problema com o acesso remoto interno pode ser devido a várias razões. Aqui estão algumas possíveis causas e soluções:
+
+1. Estação e servidor em redes diferentes: Verifique se a estação e o servidor estão na mesma rede.
+
+2. Firewall bloqueando porta do serviço de área de trabalho remota: Verifique as configurações do seu firewall para garantir que a porta do serviço de área de trabalho remota não esteja sendo bloqueada.
+
+3. Atalho apontando para o IP ou nome do servidor incorreto: Certifique-se de que o atalho está apontando para o IP ou nome do servidor correto.
+
+4. Serviço de área de trabalho remota não instalado: Verifique se o serviço de área de trabalho remota está instalado.
+
+5. IPBan_Block bloqueando o IPv4 da máquina: Verifique no firewall do servidor se o IPBan_Block está bloqueando o IPv4 da máquina.
+
+Você pode também verificar se o acesso remoto está funcionando no próprio servidor (localhost ou localhost:4009). Se nenhuma dessas soluções funcionar, pode ser necessário entrar em contato com o suporte técnico para obter assistência adicional.",1,1
+remoto externo sem funcionar,"Existem várias razões pelas quais o acesso remoto externo pode não estar funcionando. Aqui estão algumas possíveis causas e soluções:
+
+1. Atalho remoto configurado incorretamente: Verifique se o atalho remoto está apontando para o IP ou nome do servidor correto.
+
+2. Estação e servidor na mesma rede: Certifique-se de que a estação e o servidor não estejam na mesma rede.
+
+3. Servidor desligado ou sem internet: Peça ao cliente para verificar o servidor, se ele está ligado e com internet. Se estiver sem internet, oriente o cliente a reiniciar o roteador.
+
+4. Serviço de área de trabalho remota não instalado: Verifique se o serviço de área de trabalho remota está instalado.
+
+5. Firewall bloqueando a porta: Verifique se o firewall está bloqueando a porta de acesso remoto.
+
+6. No-IP não configurado: Verifique se o No-IP está configurado corretamente.
+
+7. Porta bloqueada no roteador: Verifique se a porta de acesso remoto está bloqueada no roteador.
+
+8. IPBan_Block está bloqueando o IP da estação: Verifique no firewall do servidor se o IPBan_Block está presente.
+
+Se nenhuma dessas soluções resolver o problema, pode ser necessário passar para um técnico para obter assistência adicional.",1,1
+compartilhamento de impressora,"Se você está enfrentando um erro ao compartilhar sua impressora em rede, pode ser devido à atualização do Windows 10 (kb5005565). Aqui estão alguns passos que você pode seguir para resolver o problema:
+
+1. Baixe o arquivo ""registro atualização impressora"" no HelpTools e execute-o na máquina do cliente.
+
+2. Vá em serviços e procure o serviço ""spooler de impressão"". Clique com o botão direito e selecione ""reiniciar"".
+
+3. Tente conectar a impressora pela rede novamente.
+
+Se o problema persistir, você pode tentar definir uma senha na máquina onde a impressora está fisicamente conectada e conectar na outra com essa senha. Aqui estão os passos:
+
+1. Defina uma senha para o usuário. Vá no menu iniciar ou pressione ctrl+r e digite lusrmgr.msc. Vá em usuários, clique com o botão direito no usuário que esteja logado e clique em definir senha. Digite a senha e clique em OK.
+
+2. Desative a conta de convidado.
+
+3. Vá em control userpasswords2 e desmarque a opção que faz com que você precise digitar a senha sempre que reiniciar o computador.
+
+4. Acesse o painel de controle, vá em ""exibir o status e as tarefas da rede"", depois em ""alterar as configurações de compartilhamento avançadas"" e marque a opção ""ativar compartilhamento protegido por senha"".
+
+5. Tente conectar a impressora via rede novamente. Lembre-se de marcar a opção ""salvar senha"" ao conectar a impressora.
+
+Se você está recebendo o erro 0x0000007c, siga os passos adicionais fornecidos na resposta acima.
+
+Se",0,1
+como fazer compartilhamento de impressora,"Desculpe, mas a base de dados FAQ fornecida não contém informações sobre como fazer o compartilhamento de uma impressora. Por favor, forneça mais detalhes ou consulte a documentação do fabricante da sua impressora para obter assistência específica.",0,1
+compartilhar impressora,"Para compartilhar uma impressora, você precisa adicionar a impressora correta via compartilhamento. Caso você possua mais de uma impressora e acesse com o mesmo usuário nas estações, é recomendado criar um usuário para cada setor que possui uma impressora. Além disso, é importante definir a impressora como padrão. Se você estiver instalando uma nova impressora para o setor, a solução seria instalar a impressora no setor. Se a impressora for não fiscal e você precisa emitir NFC-e ou gerar relatórios específicos, você deve executar o procedimento do FAQ específico para o modelo do fabricante da sua impressora.",0,1
+qual o faq de remoto externo?,"Para configurar o remoto externo, você pode seguir as etapas abaixo, de acordo com as informações da base de dados FAQ:
+
+1. Para configurar um TEF remoto no Softshop Caixa, você precisa instalar o Hamachi tanto no servidor quanto no caixa e deixá-los na mesma rede do Hamachi. Em seguida, coloque a DLL ""msxml.dll"" na pasta c:\windows\system32 e registre-a. Crie a pasta ""c:\softcom\tef"" e compartilhe no computador do caixa e dentro dela uma pasta de retorno ""c:\softcom\tef\retorno"". Em seguida, habilite ""unidades de disco"" na conexão de área de trabalho remota. No Softshop, em integração de lojas, a pasta destino deve apontar para a pasta ""tef"" criada no caixa. No Softshop Caixa, habilite TEF remoto e coloque o caminho da pasta ""tef"" no caixa.
+
+2. Para instalar o programa de acesso remoto ShowMyPC, acesse o site www.showmypc.com e faça o download da opção ""Show My PC to Remote User v3055"". Salve na área de trabalho e execute o ícone verde do ShowMyPC no desktop. Clique no botão ""Mostrar o meu PC"" e observe à sua direita. Passe a sequência de caracteres criados à direita, incluindo o símbolo ""-"". No seu computador, abra o seu Show My PC to Remote User v3010 e clique em ""Ver um PC remoto"". No campo que surgirá, coloque a sequência de caracteres passados pelo cliente e clique em ok.
+
+Lembre-se que o servidor deve ter Windows Server instalado e ambos, servidor e caixa, devem ter acesso à internet.",0,1
+variável que não é do tipo de dados variant,"Com base nas informações fornecidas, o erro que você está enfrentando parece estar relacionado ao tipo de dados da variável. Em uma situação, o erro ocorre ao tentar confirmar a importação do XML. A solução para esse problema é atualizar o campo cofins_cst na consulta xml_importcomprassub_vinculofiscal para: cofins_cst: nz(primeiro(seimed(vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada>0;vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada;nfe_cofins.id));0). Depois de salvar a consulta, tente importar novamente.
+
+No entanto, se o problema for semelhante ao erro que ocorre ao tentar finalizar uma venda, o problema pode ser causado por uma tabela de pagamento sem registro. A solução para isso seria importar registros da tabela de pagamento de um backup ou de uma origem.
+
+Por favor, tente as soluções mencionadas acima e veja se alguma delas resolve o seu problema.",0,1
+você tentou atribuir um valor null a uma variável que não é do tipo de dados variant,"Parece que você está enfrentando um erro ao tentar atribuir um valor null a uma variável que não é do tipo variant. Este erro geralmente ocorre ao tentar confirmar a importação do xml.
+
+A solução para este problema é atualizar o campo de cofins_cst na consulta xml_importcomprassub_vinculofiscal para: cofins_cst: nz(primeiro(seimed(vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada>0;vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada;nfe_cofins.id));0), em seguida, salvar a consulta e tentar importar novamente.
+
+Se esta solução não resolver o problema, por favor, forneça mais detalhes para que eu possa ajudar melhor.",0,0
+você tentou atribuir o valor null a uma variavel que não é do tipo de dados variant,"Este erro ocorre quando você tenta confirmar a importação do XML. Para resolver isso, você precisa atualizar o campo de cofins_cst na consulta xml_importcomprassub_vinculofiscal para : cofins_cst: nz(primeiro(seimed(vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada>0;vw_vinculofiscal_tributacaomercadoriapadrao.cofins_cst_entrada;nfe_cofins.id));0). Depois disso, salve a consulta e tente importar novamente.",1,1
+o acesso ao caminho foi negado,"Desculpe, mas não tenho informações suficientes na base de dados FAQ para responder à sua pergunta sobre ""O acesso ao caminho foi negado"". Por favor, forneça mais detalhes ou verifique se a pergunta está relacionada às questões listadas na base de dados FAQ.",0,1
+como realizar uma troca no pdv?,"Para realizar uma troca de produtos no PDV (Softshop Caixa), siga os seguintes passos:
+
+1. Pressione F11 (Funções) na tela inicial do PDV.
+2. Selecione a opção ""Trocas"".
+3. Em ""Tipo de pesquisa"", selecione ""NFCe"" se estiver com o cupom eletrônico em mãos ou ""Pedido"" se estiver com o número do pedido no sistema.
+4. Serão exibidas as mercadorias dessa venda, dê um clique duplo na coluna ""Devolver"" e informe a quantidade que será devolvida.
+5. Após isso, pressione ""F2"" para informar qual mercadoria será levada em troca. Se o cliente não for levar nenhuma mercadoria em troca, podem ser usadas as opções ""F5 - Devolver valor pago"" ou ""F7 - Salvar crédito"".
+6. Selecione o item que o cliente vai levar e pressione F1. Na coluna ""Quantidade"", informe a quantidade que será levada e clique em ""Confirmar"".
+7. Observe a diferença a ser paga pelo cliente no campo ""Saldo"" e clique em ""Pagar diferença"".
+8. Informe o vendedor que está realizando a troca.
+9. Finalize a venda informando em qual forma de pagamento essa diferença será paga.
+
+Lembre-se, você pode alterar o prazo ou a mensagem de troca em Softshop > Empresas > Configurações > Troca e imprimir o comprovante para troca acessando Configurações do PDV > Tela de Vendas e marcando ""Habilitar vias de comprovante de impressão"". Na tela de pagamento do PDV, clique em Alt + P para imprimir o comprov",1,1
+remoto externo nao ta abrindo,"Resposta: Existem várias razões pelas quais o sistema remoto pode não estar abrindo. Aqui estão algumas possíveis soluções:
+
+1. Verifique se o caminho do atalho está correto e se você consegue acessar esse caminho. 
+
+2. Certifique-se de que a rede onde o sistema está instalado está acessível. 
+
+3. Se o Microsoft Access não estiver instalado, faça a instalação. Se estiver usando outra versão do Access, aponte o atalho para abrir pelo Access correto.
+
+4. Realize um teste de ping para verificar a conectividade entre as máquinas na mesma rede.
+
+5. Verifique se a pasta ""softcom"" está compartilhada e com permissão para todos na máquina principal.
+
+6. Se você recentemente instalou a GVT, pode ser necessário liberar a porta 3389 para o IP do cliente em questão.
+
+Caso o problema persista, por favor, entre em contato com o suporte técnico.",0,1
+remoto externo nao abre,"Resposta: A dificuldade em abrir o remoto externo pode ser causada por vários fatores, como problemas com a rede, configurações de firewall, ou até mesmo a necessidade de liberar uma porta específica no roteador. Aqui estão algumas possíveis soluções para o problema:
+
+1. Verifique se a sua máquina está corretamente conectada à rede.
+2. Desative temporariamente o firewall do seu sistema para ver se isso resolve o problema. Lembre-se de ativá-lo novamente após o teste.
+3. Se você recentemente teve uma instalação da GVT, pode ser necessário liberar a porta 3389 para o IP do cliente em questão. Isso ocorre porque a GVT, ao realizar a instalação, pode bloquear essa porta, o que interfere no acesso pelo sistema remoto. 
+4. Verifique se o caminho do atalho está correto e se você consegue acessar esse caminho. 
+5. Realize o teste de ping para verificar a conectividade entre as máquinas na mesma rede.
+
+Se o problema persistir após essas etapas, recomendo que procure assistência técnica para uma análise mais detalhada do problema.",0,1
+como realizar uma nota de devolução?,"Para realizar uma nota de devolução, siga os seguintes passos:
+
+1. Realize um ajuste de estoque para dar saída (no caso de devolução para fornecedor) ou entrada no estoque (devolução de cliente não contribuinte).
+2. Abra a tela de ajuste de estoque e clique em 'novo'.
+3. Se a devolução for para seu fornecedor, vá na aba 'informações para nf-e' e preencha os campos tipo destinatário com 'fornecedor', fornecedor com o nome do fornecedor, finalidade nf-e como 'devolucao', cfop nf-e com 5202 se o fornecedor for de dentro do estado ou 6202 se for fora do estado.
+4. Referencie a nota do fornecedor que você pretende devolver na opção pelo número da nota ou opção pelo chave da nota.
+5. Clique em 'carregar'. Se a devolução for total (todos os itens da nota de seu fornecedor), é só gerar nfe. Se a devolução for parcial, revise os itens e exclua os que não serão devolvidos, após isso realize o passo de gerar nfe.
+6. Ao clicar em gerar nfe, aparecerá a confirmação. Confirme no 'sim'.
+7. A tela de nota fiscal abrirá e agora você poderá exportar esta nfe.
+8. Abra o emissor nf-e no ícone, entre com seu usuário e senha e aperte 'entrar'.
+9. Na tela de abaixo aberta, clique em 'processar notas'.
+10. Confira os dados na nota a ser transmitida e clique em 'confirmar'.
+11. Aguarde o retorno da sefaz com status e para poder imprimir seu danfe.
+
+Se você tiver mais dúvidas,",1,1
+a merda do sao paulo cai esse ano ?,"Desculpe, mas as informações disponíveis na base de dados FAQ não incluem previsões ou informações sobre times de futebol. As perguntas e respostas disponíveis estão relacionadas a problemas técnicos com o sistema. Se você tiver alguma dúvida relacionada a isso, ficarei feliz em ajudar.",0,0
+estou com o erro de classe inválida,"Para corrigir o erro de classe inválida no PDV, você precisa seguir os seguintes passos:
+
+1) Feche o caixa;
+2) Pegue o arquivo WMI (\\goku\ftp$\neto.alves\repairwmi) - caso não consiga encontrar, por favor, entre em contato com o suporte técnico;
+3) Execute o arquivo do WMI como administrador. Vão aparecer diversas validações no prompt de comando, apenas digite ""s"" + enter em todas, e aguarde o WMI executar os procedimentos;
+4) Após o WMI executar, reinicie o computador;
+5) Abra o caixa novamente.
+
+Se o problema persistir, por favor, entre em contato com o suporte técnico.",0,0
+estou com erro de classe invalida,"Desculpe, mas com as informações fornecidas da base de dados FAQ, não há uma resposta direta para o ""erro de classe inválida"". Recomendo que você verifique a documentação do seu software ou entre em contato com o suporte técnico para obter assistência específica para o seu problema.",0,0
+como gerar uma nota de devolucao,"Para gerar uma nota de devolução, siga os seguintes passos:
+
+1. Abra a tela de ajustes de estoque e realize um ajuste de entrada (se a devolução for de um cliente para a empresa) ou saída (se a devolução for da empresa para o fornecedor), selecionando o tipo 'devolução'. Salve esse ajuste.
+
+2. Na tela da nota fiscal, clique em 'novo'. Na aba de origem à esquerda, selecione o tipo 'ajuste' e digite a numeração correspondente ao ajuste realizado anteriormente.
+
+3. Clique no botão 'lançar remetente e mercadorias'.
+
+4. Informe o CFOP referente à devolução. Caso não saiba, obtenha essa informação com a contabilidade.
+
+5. Se a nota de devolução for para um fornecedor, ele deve ser cadastrado como cliente. Preencha as informações referentes ao destinatário, CFOP e transportadora.
+
+6. Exporte a nota para o emissor e emita-a normalmente.
+
+Lembre-se que se a sua empresa é Simples Nacional, não se gera valores de ICMS na nota de devolução, portanto, este é gerado com valor zero no emissor de NFe.",1,1
+como cadastrar produto ?,"Para cadastrar um produto no ""Meu Carrinho"", siga os passos abaixo:
+
+1. Acesse o portal através do link: https://portal.meucarrinho.delivery e faça login usando as credenciais da empresa.
+2. No menu lateral, escolha a opção ""Catálogo"".
+3. Se necessário, cadastre a categoria do produto clicando em ""Adicionar categoria"". Informe o nome da categoria e clique em ""Salvar"".
+4. Localize a categoria desejada para o produto e clique em ""Adicionar produto"".
+5. Preencha os campos obrigatórios na ficha do produto: nome e preço. Selecione uma imagem para o produto e clique em ""Salvar"". Outros campos podem ser preenchidos para melhor descrever ou localizar o produto, como descrição, código PDV ou código de barras.
+6. Por motivo de segurança, o produto ficará com o status ""Pausado"". Será necessário ativar a venda clicando no botão (Play). Verifique se a categoria também está disponível para venda. Se estiver pausada, ative-a clicando no botão (Play) da categoria desejada.
+
+Feito isso, o produto já estará disponível na loja pronto para ser vendido! Caso deseje realizar o cadastro via importação de planilha, siga os procedimentos do FAQ 6131.
+
+Para mais informações, assista ao vídeo de ajuda: [incorporado]https://www.youtube.com/embed/lwyxcrvzauc[/incorporado]",1,1
+estou com erro de invalid class,"Infelizmente, com base nas perguntas e respostas fornecidas na base de dados FAQ, não temos informações específicas sobre o erro ""invalid class"". Recomendo que você verifique a documentação do software que está usando ou entre em contato com o suporte técnico para obter ajuda com esse erro específico.",0,1
